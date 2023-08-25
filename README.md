@@ -1,6 +1,8 @@
 # Regex
 Discussing some regex examples.
 
+---
+
 ## example 1
 ```
 mobile number start with 8 or 9 and total digit = 10
