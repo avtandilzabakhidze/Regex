@@ -1,6 +1,5 @@
 # Regex
-###### try 6
-####### try 7
+
 Discussing some regex examples.
 
 ---
