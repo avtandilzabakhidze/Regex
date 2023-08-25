@@ -8,9 +8,9 @@ mobile number start with 8 or 9 and total digit = 10
 
 ## example 2
 
--first character uppercase
--contain lower case alphabets
--only one digit allowed in between
+- first character uppercase
+- contain lower case alphabets
+- only one digit allowed in between
 
 
 ## example 3
