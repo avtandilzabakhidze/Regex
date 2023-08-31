@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         //regex example 1)
         //mobile number start with 8 or 9 and total digit  = 10
-        String regex = "([89])\\d{9}";
+        String regex = "[89]\\d{9}";
         String input = "89283948982";
 
         Pattern pattern = Pattern.compile(regex);
@@ -45,5 +45,31 @@ public class Main {
             String matcherText = matcher2.group();
             System.out.println("email :" + matcherText);
         }
+
+
+        System.out.println("-------------replaceAll---------------------");
+        String str = "hello"+'"'+"Bob";
+        String s = str.replaceAll("\"", "-");
+        System.out.println(s);
+
+        String original  = "ABC-123, DGK-432";
+        String s1 = original.replaceAll("(\\w{3})-(\\d{3})","$2-$1");
+        System.out.println(s1);
+
+        String numbers = "123412551999";
+        Pattern pattern3 =Pattern.compile("(\\d{2})(\\d{2})",Pattern.CASE_INSENSITIVE);
+        Matcher matcher3 = pattern3.matcher(numbers);
+
+        while (matcher3.find()) {
+            if (matcher3.group(1) != null){
+                System.out.println(matcher3.group(1));
+            }
+            if (matcher3.group(2) != null){
+                System.out.println(matcher3.group(2));
+            }
+            System.out.println(matcher3.group());
+        }
+
+
     }
 }
